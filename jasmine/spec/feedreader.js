@@ -78,34 +78,35 @@ $(function() {
 
 
     /* Test suite named "Initial Entries"
-     * This was completed based on tutorial TODO: need to make sure it works
-     * and refine code and I actually understand what is going on here with async tests.
-      * May try out .children method as suggested on Slack  */
+     * This was configured using Cranford's .children method to get
+     * the results needed and Jasmine tutorial for callbacks  */
     describe('Initial Entries', function(){
-        const feeder = document.getElementsByClassName('feed')[0].getElementsByClassName('entry');
+        const feeder = document.querySelector('.feed');
 
-        beforeEach(function(done){
-            loadFeed(0, done);
+        beforeEach(function(done){ //Method provided in instruction
+            loadFeed(0);
+            loadFeed(1, done);  //Jasmine will pass a function to be invoked when asynchronous work has been completed.
         });
 
         it('make sure load feed did its job', function(){
-            expect(feeder.length).toBeGreaterThan(0);
+            expect(feeder.children.length).not.toBe(0);
         });
     });
 
 
     describe('New Feed Selection', function(){
 
-        let firstFeed, secondFeed;
+        let firstFeed;
+        let secondFeed;
 
         beforeEach(function(done){
             loadFeed(0, function(){
-                firstFeed = document.querySelector(".entry").innerText;
-                console.log(firstFeed);
+                firstFeed = document.querySelector(".entry").textContent;
+                console.log(firstFeed); //make sure getting right text
 
                 loadFeed(1, function(){
-                    secondFeed = document.querySelector(".entry").innerText;
-                    console.log(secondFeed)
+                    secondFeed = document.querySelector(".entry").textContent;
+                    console.log(secondFeed) //make sure getting right text
 
                     done();
                 });

@@ -17,7 +17,7 @@ To access the project, do the following:
 * Grow With Google Nanodegree Student Forum
 * Matthew Cranford's Project 4 [walkthrough](https://matthewcranford.com/feed-reader-walkthrough-part-1-starter-code/)
 * JavaScript Testing [course](https://www.udacity.com/course/ud549)
-
+* Jasmine Tutorial - [Asynchronous Work](https://jasmine.github.io/tutorials/async)
 
 ## How was the project completed?
 
