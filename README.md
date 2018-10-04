@@ -14,7 +14,7 @@ To access the project, do the following:
 
 ## Resources
 
-* Grow With Google Nanodegree Student Forum
+* Grow With Google Nanodegree Student Slack 
 * Matthew Cranford's Project 4 [walkthrough](https://matthewcranford.com/feed-reader-walkthrough-part-1-starter-code/)
 * JavaScript Testing [course](https://www.udacity.com/course/ud549)
 * Jasmine Tutorial - [Asynchronous Work](https://jasmine.github.io/tutorials/async)
@@ -35,4 +35,4 @@ Here is the rubric used: [Project Rubric](https://review.udacity.com/#!/projects
 10. I wrote a test suite named `"New Feed Selection"`.
 11. I wrote a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
 12. I made sure test should be dependent on the results of another.
-13. I wrote a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+13. I wrote a README file detailing all steps required to successfully run the application.
